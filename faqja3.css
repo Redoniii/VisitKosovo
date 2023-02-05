@@ -1,0 +1,218 @@
+#redoni {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rb-navbar {
+  width: 90%;
+  margin: auto;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  cursor: pointer;
+}
+
+.rb-navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.rb-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.rb-navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.7s;
+}
+
+.rb-navbar ul li:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .rb-navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+.prishtina {
+  color: blue;
+}
+  
+  /*p {
+    text-align: justify;
+    color: black;
+  }
+  */
+  
+  p {
+    text-align: left;
+    color: black;
+    font-size: 18px;
+  }
+  
+    .rbcard0 {
+      background: url("Photos/libraira.jpg") center center no-repeat;
+      background-size: 353px;
+    }
+    .rbcard0:hover {
+      background: url("Photos/libraira.jpg") center center no-repeat;
+      background-size: 600px;
+      border: 3px solid blue;
+    }
+    .rbcard1 {
+      background: url("Photos/newborn.jpg") center center no-repeat;
+      background-size: 353px;
+    }
+    .rbcard1:hover {
+      background: url("Photos/newborn.jpg") center center no-repeat;
+      background-size: 600px;
+      border: 3px solid blue;
+    }
+    .rbcard2 {
+      background: url("Photos/museum.jpg") center center no-repeat;
+      background-size: 353px;
+    }
+    .rbcard2:hover {
+      background: url("Photos/museum.jpg") center center no-repeat;
+      background-size: 600px;
+      border: 3px solid blue;
+    }
+  
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+  }
+  
+  .redon, .redon1, .redon2 {
+    width: 100%; 
+    margin: 10px;
+    background-color: #58aff2;
+    padding: 1rem;
+  }
+  
+  .rbcard {
+    width: 98.5%; 
+    height: 200px; 
+    background-color: #ccc;
+    margin-bottom: 1rem;
+    transition: background 1s;
+    box-shadow: 0 60px 150px -60px rgb(97, 94, 94);
+  }
+
+.redon{
+  box-shadow: 0 20px 40px rgba(87, 84, 84, 0.5);
+}
+
+.redon1{
+  box-shadow: 0 20px 40px rgba(87, 84, 84, 0.5);
+}
+
+.redon2{
+  box-shadow: 0 20px 40px rgba(87, 84, 84, 0.5);
+}
+
+.rbcard:hover{
+  transform: rotate(1deg);
+}
+
+
+
+
+
+@media (min-width: 990px) { 
+    .redon, .redon1, .redon2 {
+        width: 30%;
+    }
+}
+
+
+.rbcity-highlight {
+  text-align: center;
+  padding: 50px;
+}
+
+.rbcity-highlight h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.rbcity-highlight p {
+  padding: 0 100px;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rbcity-image {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.rbcity-image img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(87, 84, 84, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .rbcity-highlight {
+    padding: 20px;
+  }
+  .rbcity-highlight h2 {
+    font-size: 28px;
+  }
+  .rbcity-highlight p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  .rbcity-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.rbfooter {
+  background-color: rgb(125, 125, 125);
+  color: #fff;
+  padding: 20px;
+}
+
+.rbp{
+  text-align: center;
+}

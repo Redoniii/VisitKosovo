@@ -1,0 +1,199 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+
+#redoni {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rb-navbar {
+  width: 90%;
+  margin: auto;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  cursor: pointer;
+}
+
+.rb-navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.rb-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.rb-navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.7s;
+}
+
+.rb-navbar ul li:hover:after {
+  width: 100%;
+}
+
+.mitrovica {
+    color: greenyellow;
+  }
+
+@media (max-width: 768px) {
+  .rb-navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+.container-rb {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.rbcard-item{
+    width: 300px;
+    margin: 3rem;
+    position: relative;
+    border-radius: 8px;
+    background: white;
+    padding-bottom: 2rem;
+    transition: all 0.7s ease;
+    box-shadow: 0 20px 40px rgba(87, 84, 84, 0.329);
+}
+
+.rbcard-item:hover{
+    transform: rotate(3deg);
+    box-shadow: 0 30px 50px rgba(97, 232, 153, 1);
+}
+
+.image {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.5s;
+    background-size: cover;
+    background-position: center center;
+}
+
+.image1{
+    background-image: url("Photos/Xhamia_e_Mitrovices.JPG");
+}
+
+.image2{
+    background-image: url("Photos/liqeni.jpg");
+}
+
+.image3{
+    background-image: url("Photos/miniera-e-Trepces.jpg");
+}
+
+.image4{
+  background-image: url("Photos/mazhiq.jpg");
+}
+
+.image5{
+  background-image: url("Photos/kisha.jpg");
+}
+
+.image6{
+  background-image: url("Photos/Boletin.jpg");
+}
+
+
+.content {
+    padding: 1rem;
+
+}
+
+.title{
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 14;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    color: rgb(124, 133, 141);
+}
+
+.button {
+    color:white;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    background-color: #e65b00;
+}
+
+@media (max-width: 600px) {
+  .rbcard-item {
+      width: 80%;
+      margin: 1rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .image {
+      width: 100%;
+      height: 150px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  p {
+      font-size: 12px;
+  }
+}
+
+/* .footer {
+  background-color: rgb(125, 125, 125);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+} */
+
+
+
+
+
+#p{
+    color: #fff;
+}
+

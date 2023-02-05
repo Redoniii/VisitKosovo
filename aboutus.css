@@ -1,0 +1,107 @@
+#redoni {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rb-navbar {
+  width: 90%;
+  margin: auto;
+  padding: 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 210px;
+  cursor: pointer;
+}
+
+.rb-navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.rb-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.rb-navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.7s;
+}
+
+.rb-navbar ul li:hover:after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .rb-navbar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+.lead {
+    color: black;
+}
+
+
+.rbabout-header {
+    background-image: linear-gradient(to right, #69e2d6, #b5f5ec);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2rem;
+}
+.rbabout-header h1 {
+    font-weight: bold;
+    color: #fff;
+}
+.rbabout-image {
+    background-image: url("Photos/vizitkosova.png");
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rbabout-text {
+    color: #333;
+}
+
+.footer {
+  background-color: rgb(125, 125, 125);
+  color: #fff;
+  padding: 20px;
+}
+
+.rbp{
+  text-align: center;
+}
+
