@@ -131,9 +131,12 @@ h4{
 }
 
 .card:hover{
-    rotate: 359deg;
+  transform: rotate(-3deg);
+  transition: all 0.7s ease;
+  box-shadow: 0 20px 30px rgba(232, 99, 98, 1);
 }
 
 .card-img-top {
-    height: 300px;
+  height: 300px;
+  border-radius: 8px;
 }
