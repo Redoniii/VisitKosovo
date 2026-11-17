@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="aboutus.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="bootstrap.js"></script>
-    <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
 </head>
-<body id="redoni">
-<div class="rb-navbar">
-    <img src="Photos\r2.png" class="logo">
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="Faqja3.html">Prishtina</a></li>
-        <li><a href="mitrovica.html"><span class="mitrovica">Mitrovica</span></a></li>
-        <li><a href="prizreni.html">Prizreni</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-    </ul>
-</div>
+<body>
 
-    <div class="container my-5">
-      <div class="rbabout-header d-flex align-items-center">
-        <h1 class="text-center">About Us</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="rbabout-image"></div>
-        </div>
-        <div class="col-md-6">
-          <p class="rbabout-text lead">Welcome to Visit Kosovo, the ultimate destination for discovering all that Kosovo has to offer. We are dedicated to providing our visitors with the most comprehensive and up-to-date information about this beautiful country, from its rich cultural heritage to its stunning natural beauty. </p>
-          <p class="rbabout-text">At Visit Kosovo, we believe that travel is one of life's greatest experiences. That's why we have created a one-stop-shop for all things Kosovo, filled with the information and resources you need to make the most of your time here. Whether you're a first-time visitor or a seasoned traveler, we are here to help you plan the perfect trip.</p>
-          <p class="rbabout-text">So whether you're looking for adventure, relaxation, or cultural immersion, Visit Kosovo is here to help you make the most of your time in this truly special country. We hope you enjoy your visit and come back to explore more of Kosovo soon!</p>
-        </div>
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mitrovica.html">Mitrovica</a></li>
+        <li><a href="prishtina.html">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html">Gjakova</a></li>
+        <li><a href="prizren.html">Prizren</a></li>
+        <li><a href="aboutus.html" class="active">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero hero-short">
+    <div class="hero-head">
+      <div>
+        <h1>About Us</h1>
+        <p class="hero-sub">Your guide to Kosovo, one stop at a time.</p>
       </div>
     </div>
-    
-    
-<div class="footer">
-    <p class="rbp">Copyright &copy; 2023 | All Rights Reserved</p>
-</div>
+  </section>
+
+  <main class="features">
+    <article class="feature about">
+      <img src="Photos/vizitkosova.png" alt="Visit Kosovo logo">
+      <div>
+        <p class="eyebrow">Who we are</p>
+        <h2>Welcome to Visit Kosovo.</h2>
+        <p>Visit Kosovo is the ultimate destination for discovering all that Kosovo has to offer. We are dedicated to providing our visitors with the most comprehensive and up-to-date information about this beautiful country, from its rich cultural heritage to its stunning natural beauty.</p>
+        <p>At Visit Kosovo, we believe that travel is one of life's greatest experiences. That's why we have created a one-stop-shop for all things Kosovo, filled with the information and resources you need to make the most of your time here. Whether you're a first-time visitor or a seasoned traveler, we are here to help you plan the perfect trip.</p>
+        <p>So whether you're looking for adventure, relaxation, or cultural immersion, Visit Kosovo is here to help you make the most of your time in this truly special country. We hope you enjoy your visit and come back to explore more of Kosovo soon!</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- ============ START THE ROUTE ============ -->
+  <section class="strip-wrap">
+    <p class="eyebrow">Ready?</p>
+    <h2>Start the route</h2>
+    <div class="strip">
+      <a class="mini" href="mitrovica.html">
+        <span class="num">1</span>
+        <span class="polaroid"><img src="Photos/Xhamia_e_Mitrovices.JPG" alt="Mosque in Mitrovica"><span>Mitrovica</span></span>
+      </a>
+      <a class="mini" href="prishtina.html">
+        <span class="num">2</span>
+        <span class="polaroid"><img src="Photos/newborn.jpg" alt="The Newborn monument in Prishtina"><span>Prishtina</span></span>
+      </a>
+      <a class="mini" href="peja.html">
+        <span class="num">3</span>
+        <span class="polaroid"><img src="Photos/peja-rugova.jpg" alt="The Rugova Canyon near Peja"><span>Peja</span></span>
+      </a>
+      <a class="mini" href="gjakova.html">
+        <span class="num">4</span>
+        <span class="polaroid"><img src="Photos/gjakova-bazaar.jpg" alt="A street in the Old Bazaar of Gjakova"><span>Gjakova</span></span>
+      </a>
+      <a class="mini" href="prizren.html">
+        <span class="num">5</span>
+        <span class="polaroid"><img src="Photos/kaleja.jpg" alt="Prizren Fortress"><span>Prizren</span></span>
+      </a>
+    </div>
+  </section>
+
+  <details class="credits">
+    <summary>Photo credits</summary>
+    <ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Rugova_canyon_(WPWTR17).jpg" target="_blank" rel="noopener">Rugova canyon (WPWTR17)</a> &mdash; Albinfo, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Street_in_the_Old_Bazaar_of_Gjakova,_2025.jpg" target="_blank" rel="noopener">Street in the Old Bazaar of Gjakova, 2025</a> &mdash; Bdx, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a></li>
+    </ul>
+    <p>These photos are from Wikimedia Commons and are used under the licences shown.</p>
+  </details>
+
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>

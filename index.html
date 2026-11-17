@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="mitrovica.html">Mitrovica</a></li>
+        <li><a href="prishtina.html">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html">Gjakova</a></li>
+        <li><a href="prizren.html">Prizren</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ CITY MAP HERO ============ -->
+  <section class="hero">
+    <div class="hero-head">
+      <div>
+        <h1>Visit Kosovo</h1>
+        <ol class="legend">
+          <li><a href="mitrovica.html">Mitrovica</a></li>
+          <li><a href="prishtina.html">Prishtina</a></li>
+          <li><a href="peja.html">Peja</a></li>
+          <li><a href="gjakova.html">Gjakova</a></li>
+          <li><a href="prizren.html">Prizren</a></li>
+        </ol>
+      </div>
+      <p class="hero-tag">City<br>Map</p>
+    </div>
+
+    <!-- 1000 x 1280 map: --h on the stage must match the svg viewBox height -->
+    <div class="stage" style="--h:1280">
+      <svg class="route" viewBox="0 0 1000 1280" aria-hidden="true">
+        <!-- the road, north to south -->
+        <path class="road" pathLength="1000" d="M480,-20 V260 H560 V520 L450,600 V760 H560 V990 L470,1060 V1280" />
+        <!-- dotted connectors pin -> card -->
+        <path class="dots" d="M460,150 H380" />
+        <path class="dots" d="M580,390 H620 V375 H660" />
+        <path class="dots" d="M430,640 H370" />
+        <path class="dots" d="M580,880 H660" />
+        <path class="dots" d="M450,1120 H380" />
+      </svg>
+
+      <div class="stop">
+        <span class="pin" style="--px:480; --py:150">1</span>
+        <a class="card" href="mitrovica.html" style="--x:160; --y:35; --tilt:-3deg">
+          <img src="Photos/Xhamia_e_Mitrovices.JPG" alt="Mosque in Mitrovica">
+          <span class="caption">Mitrovica <small>North &middot; Explore &rarr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:560; --py:390">2</span>
+        <a class="card" href="prishtina.html" style="--x:660; --y:260; --tilt:2.5deg">
+          <img src="Photos/newborn.jpg" alt="The Newborn monument in Prishtina">
+          <span class="caption">Prishtina <small>Capital &middot; Explore &rarr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:450; --py:640">3</span>
+        <a class="card" href="peja.html" style="--x:150; --y:525; --tilt:-2deg">
+          <img src="Photos/peja-rugova.jpg" alt="The Rugova Canyon near Peja">
+          <span class="caption">Peja <small>West &middot; Explore &rarr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:560; --py:880">4</span>
+        <a class="card" href="gjakova.html" style="--x:660; --y:765; --tilt:3deg">
+          <img src="Photos/gjakova-bazaar.jpg" alt="A street in the Old Bazaar of Gjakova">
+          <span class="caption">Gjakova <small>Southwest &middot; Explore &rarr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:1120">5</span>
+        <a class="card" href="prizren.html" style="--x:160; --y:1005; --tilt:-2deg">
+          <img src="Photos/kaleja.jpg" alt="Prizren Fortress above the city">
+          <span class="caption">Prizren <small>South &middot; Explore &rarr;</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-hint">Pick a stop &mdash; or <a href="#about">scroll to learn about Kosovo &darr;</a></p>
+  </section>
+
+  <!-- ============ ABOUT KOSOVO ============ -->
+  <main class="features" id="about">
+
+    <article class="feature">
+      <img src="Photos/Fla.png" alt="Flag of Kosovo">
+      <div>
+        <p class="eyebrow">01 &middot; History</p>
+        <h2>We've got a lot of it.</h2>
+        <p>Kosovo is a region in Southeast Europe with a rich and complex history. It was part of the Ottoman Empire for centuries before becoming part of Yugoslavia in the 20th century. In 1999, NATO intervened in Kosovo after a brutal conflict between Albanian separatists and Serbian forces.</p>
+        <p>Kosovo declared independence from Serbia in 2008 and has since been recognized as an independent country by over 100 nations, though its status is still not fully recognized by some states including Serbia.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse">
+      <img src="Photos/kosovo-5716101672_orig.jpg" alt="Autumn forest and mountains in Kosovo">
+      <div>
+        <p class="eyebrow">02 &middot; Natural Beauty</p>
+        <h2>Mountains, canyons &amp; waterfalls.</h2>
+        <p>Kosovo, located in the Balkans region of Europe, is a country that boasts breathtaking natural beauty and unique landscapes. From rolling hills and majestic mountains to pristine lakes and sprawling forests, Kosovo is a true haven for nature lovers.</p>
+        <p>The Rugova Canyon, a 20-mile-long canyon surrounded by towering cliffs, offers breathtaking views. The Mirusha Waterfalls, a series of cascading falls, are surrounded by lush greenery and wildlife. The Prokletije Mountains, with their diverse landscape and scenic trails, are a popular destination for hiking and exploring &mdash; a peaceful escape from the hustle and bustle of daily life.</p>
+      </div>
+    </article>
+
+    <article class="feature">
+      <img src="Photos/HAMAM.jpg" alt="Prishtina and the Great Hamam">
+      <div>
+        <p class="eyebrow">03 &middot; Cultural Heritage</p>
+        <h2>Oh yeah, it's that good.</h2>
+        <p>Kosovo is rich in cultural heritage, with a diverse mix of influences from its long and storied history. The country has a rich tradition of art, music, and literature, as well as a unique cuisine that reflects its Ottoman, Balkan, and Albanian heritage.</p>
+        <p>Kosovo is also home to numerous historic landmarks and monuments, including medieval castles and Ottoman-era bazaars. Its diverse population, including Albanians, Serbs, and Roma, adds to its cultural richness, with each group contributing its own unique traditions and customs.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse">
+      <img src="Photos/food.jpg" alt="Traditional Kosovar food">
+      <div>
+        <p class="eyebrow">04 &middot; Gastronomy</p>
+        <h2>Come hungry.</h2>
+        <p>Kosovo is known for its delicious cuisine, a blend of Albanian and Turkish culinary traditions. Some of the most popular dishes include flija, a savory layered pastry, and burek, a flaky pastry filled with meat or cheese.</p>
+        <p>The country is also known for its locally grown fruits and vegetables, including plums, peaches, and tomatoes, used to make traditional preserves and sauces. In recent years Kosovo has emerged as a destination for foodies, with a thriving restaurant scene that offers everything from street food to fine dining.</p>
+      </div>
+    </article>
+
+  </main>
+
+  <details class="credits">
+    <summary>Photo credits</summary>
+    <ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Rugova_canyon_(WPWTR17).jpg" target="_blank" rel="noopener">Rugova canyon (WPWTR17)</a> &mdash; Albinfo, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Street_in_the_Old_Bazaar_of_Gjakova,_2025.jpg" target="_blank" rel="noopener">Street in the Old Bazaar of Gjakova, 2025</a> &mdash; Bdx, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a></li>
+    </ul>
+    <p>These photos are from Wikimedia Commons and are used under the licences shown.</p>
+  </details>
+
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

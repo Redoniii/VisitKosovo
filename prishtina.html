@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prishtina | Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mitrovica.html">Mitrovica</a></li>
+        <li><a href="prishtina.html" class="active">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html">Gjakova</a></li>
+        <li><a href="prizren.html">Prizren</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ============ CITY MAP HERO ============ -->
+  <section class="hero" style="--hero-img: url('Photos/1234.jpg')">
+    <div class="hero-head">
+      <div>
+        <h1>Prishtina</h1>
+        <ol class="legend">
+          <li><a href="#museum">Ethnographic Museum</a></li>
+          <li><a href="#imperial-mosque">Imperial Mosque &amp; Clock Tower</a></li>
+          <li><a href="#newborn">Newborn Monument</a></li>
+          <li><a href="#cathedral">Mother Teresa Cathedral</a></li>
+          <li><a href="#library">National Library</a></li>
+          <li><a href="#germia">Germia Park</a></li>
+        </ol>
+      </div>
+      <p class="hero-tag">Stop 2<br>of 5</p>
+    </div>
+
+    <!-- 1000 x 1480 map: --h on the stage must match the svg viewBox height -->
+    <div class="stage" style="--h:1480">
+      <svg class="route" viewBox="0 0 1000 1480" aria-hidden="true">
+        <path class="road" pathLength="1000"
+              d="M470,-20 V260 H540 V500 L460,580 V740 H550 V980 L470,1060 V1210 H530 V1480" />
+        <path class="dots" d="M450,150 H360" />
+        <path class="dots" d="M560,380 H600 V350 H640" />
+        <path class="dots" d="M440,640 H360" />
+        <path class="dots" d="M570,870 H640" />
+        <path class="dots" d="M450,1100 H400 V1125 H360" />
+        <path class="dots" d="M550,1330 H640" />
+      </svg>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:150">1</span>
+        <a class="card" href="#museum" style="--x:140; --y:35; --tilt:-3deg">
+          <img src="Photos/museum.jpg" alt="The Ethnographic Museum's Ottoman-era house">
+          <span class="caption">Ethnographic Museum <small>Old Town &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:540; --py:380">2</span>
+        <a class="card" href="#imperial-mosque" style="--x:640; --y:235; --tilt:2.5deg">
+          <img src="Photos/prishtina-imperial-mosque.jpg" alt="The Imperial Mosque and the Clock Tower">
+          <span class="caption">Imperial Mosque <small>Old Town &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:460; --py:640">3</span>
+        <a class="card" href="#newborn" style="--x:140; --y:525; --tilt:-2deg">
+          <img src="Photos/newborn.jpg" alt="The Newborn monument">
+          <span class="caption">Newborn <small>City Centre &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:550; --py:870">4</span>
+        <a class="card" href="#cathedral" style="--x:640; --y:755; --tilt:3deg">
+          <img src="Photos/prishtina-cathedral.jpg" alt="Mother Teresa Cathedral">
+          <span class="caption">The Cathedral <small>City Centre &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:1100">5</span>
+        <a class="card" href="#library" style="--x:140; --y:1010; --tilt:-2.5deg">
+          <img src="Photos/libraira.jpg" alt="The domed National Library of Kosovo">
+          <span class="caption">National Library <small>Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:530; --py:1330">6</span>
+        <a class="card" href="#germia" style="--x:640; --y:1215; --tilt:2deg">
+          <img src="Photos/prishtina-germia.jpg" alt="Green meadow and forest in Germia Park">
+          <span class="caption">Germia Park <small>City Edge &middot; Read &darr;</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-hint">Pick a stop &mdash; or <a href="#intro">scroll to explore Prishtina &darr;</a></p>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro" id="intro">
+    <p class="eyebrow">The capital of Kosovo</p>
+    <h2>Discover the beauty of Prishtina</h2>
+    <p>Prishtina is a vibrant and dynamic city, with a rich cultural heritage, charming architecture, and a thriving arts and food scene. From its bustling markets and street vendors, to its traditional teahouses and modern cafes, Prishtina is a city full of surprises and wonders waiting to be explored.</p>
+    <p>Whether you're interested in history, culture, or just soaking up the local atmosphere, Prishtina has something for everyone, and is sure to leave a lasting impression on all who visit.</p>
+    <a class="more" href="https://en.wikipedia.org/wiki/Pristina" target="_blank" rel="noopener">More about Prishtina on Wikipedia &rarr;</a>
+  </section>
+
+  <!-- ============ SIGHTS ============ -->
+  <main class="features">
+
+    <article class="feature" id="museum">
+      <img src="Photos/museum.jpg" alt="The Ethnographic Museum's Ottoman-era house">
+      <div>
+        <p class="eyebrow"><span class="num">1</span> Ethnographic Museum</p>
+        <h2>Step inside an Ottoman-era home.</h2>
+        <p>The museum is housed in an Ottoman-era mansion and contains exhibits showcasing the traditional culture and history of Kosovo's diverse ethnic groups. It is considered one of the finest cultural institutions in the Balkans and is known for its well-curated exhibits, including traditional clothing, household objects, and weapons.</p>
+        <p>The Ethnographic Museum is also a popular tourist destination, attracting visitors from around the world who are interested in learning about the rich cultural heritage of Kosovo.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="imperial-mosque">
+      <img src="Photos/prishtina-imperial-mosque.jpg" alt="The Imperial Mosque and the Clock Tower">
+      <div>
+        <p class="eyebrow"><span class="num">2</span> Imperial Mosque &amp; Clock Tower</p>
+        <h2>The heart of the old town.</h2>
+        <p>The Imperial Mosque, also known as the Sultan Mehmet Fatih Mosque or Xhamia e Mbretit, was built in 1461 on the orders of the Ottoman sultan Mehmed II. It is one of the oldest buildings in Prishtina, and its large dome and tall minaret still dominate the old town.</p>
+        <p>Right next to it stands the 19th-century Clock Tower (Sahat Kulla). Together with the Great Hamam and the old bazaar streets around them, they make up the historic core of the city &mdash; an easy walk from the Ethnographic Museum.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/King_Mosque,_Pristina" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="newborn">
+      <img src="Photos/newborn.jpg" alt="The Newborn monument">
+      <div>
+        <p class="eyebrow"><span class="num">3</span> Newborn Monument</p>
+        <h2>The symbol of independence.</h2>
+        <p>The Newborn Monument in Prishtina is a large sculpture located in the city center, erected to commemorate the declaration of independence from Serbia in 2008. The monument spells out the word &ldquo;Newborn&rdquo; in giant letters.</p>
+        <p>It has become a symbol of Kosovo's independence and a popular tourist attraction, drawing visitors from around the world to take photos with it.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="cathedral">
+      <img src="Photos/prishtina-cathedral.jpg" alt="Mother Teresa Cathedral">
+      <div>
+        <p class="eyebrow"><span class="num">4</span> Mother Teresa Cathedral</p>
+        <h2>The city's newest landmark.</h2>
+        <p>The Cathedral of Saint Mother Teresa is the Catholic cathedral of Prishtina, dedicated to the Albanian-born saint. Plans for the cathedral were approved in 2007, and it was consecrated in 2017.</p>
+        <p>Its tall bell tower is one of the most recognisable sights on the skyline, and visitors can go up the tower for a view over the whole city. It sits a short walk from Mother Teresa Boulevard, Prishtina's lively pedestrian main street, lined with caf&eacute;s and shops.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Cathedral_of_Saint_Mother_Teresa" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="library">
+      <img src="Photos/libraira.jpg" alt="The domed National Library of Kosovo">
+      <div>
+        <p class="eyebrow"><span class="num">5</span> National Library of Kosovo</p>
+        <h2>The country's largest library.</h2>
+        <p>The National Library of Kosovo is the largest library in the country. Located in the capital city of Prishtina, it serves as a cultural and educational center, providing access to books, magazines, and other resources to the people of Kosovo.</p>
+        <p>The library has a rich collection of over 500,000 items, including rare books and manuscripts, and it is an important resource for researchers, students, and others who are interested in Kosovo's history and cultural heritage.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="germia">
+      <img src="Photos/prishtina-germia.jpg" alt="Green meadow and forest in Germia Park">
+      <div>
+        <p class="eyebrow"><span class="num">6</span> Germia Park</p>
+        <h2>The city's green escape.</h2>
+        <p>Germia is a large regional park of forested hills on the north-eastern edge of Prishtina, only minutes from the centre. Its walking and cycling trails are popular with locals all year round.</p>
+        <p>In summer, families come for picnics and for the park's big outdoor swimming pool; in winter, the snowy forest makes for quiet walks.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Germia_Park" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ============ DAY TRIPS ============ -->
+  <section class="trips">
+    <div class="section-head">
+      <p class="eyebrow">Just outside the city</p>
+      <h2>Day trip from Prishtina</h2>
+    </div>
+    <div class="trip-grid">
+      <article class="trip">
+        <img src="Photos/bear-sanctuary.jpg" alt="A brown bear at the Bear Sanctuary Prishtina">
+        <div>
+          <span class="tag">About 22 km</span>
+          <h3>Bear Sanctuary Prishtina</h3>
+          <p>A forested sanctuary near Lake Badovc that gives a safe home to brown bears rescued from captivity. Visitors can walk the paths and watch the bears in large natural enclosures.</p>
+          <a class="more" href="https://en.wikipedia.org/wiki/Bear_Sanctuary_Prishtina" target="_blank" rel="noopener"><span>Read more</span> &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ GOOD TO KNOW ============ -->
+  <section class="facts-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Good to know</h2>
+    </div>
+    <ul class="facts">
+      <li><strong>Getting there</strong><span>Prishtina International Airport &ldquo;Adem Jashari&rdquo; is about 15 km from the city centre.</span></li>
+      <li><strong>Currency</strong><span>Kosovo uses the euro (&euro;).</span></li>
+      <li><strong>Language</strong><span>Albanian and Serbian are official; many young people also speak English.</span></li>
+      <li><strong>Getting around</strong><span>The centre is compact and easy to explore on foot; taxis are cheap for longer trips.</span></li>
+      <li><strong>Don't miss</strong><span>A macchiato in one of the caf&eacute;s on Mother Teresa Boulevard &mdash; caf&eacute; culture is a big part of city life.</span></li>
+    </ul>
+  </section>
+
+  <details class="credits">
+    <summary>Photo credits</summary>
+    <ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Sultan_Mehmet_Fatih_mosque_and_clock_tower.jpg" target="_blank" rel="noopener">Sultan Mehmet Fatih mosque and clock tower</a> &mdash; Arianit Sahiti, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Mother_Teresa_Cathedral_(Pristina)%E2%80%942017.JPG" target="_blank" rel="noopener">Mother Teresa Cathedral (Pristina)&mdash;2017</a> &mdash; Jeffrey Beall, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Germia_Park_during_Spring_Season_in_Prishtina,_Kosovo.jpg" target="_blank" rel="noopener">Germia Park during Spring Season in Prishtina, Kosovo</a> &mdash; SUHEJLO, <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Bear_Sanctuary_Prishtina_Bear_1_(OSCAL19_trip).jpg" target="_blank" rel="noopener">Bear Sanctuary Prishtina Bear 1 (OSCAL19 trip)</a> &mdash; albinfo, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a></li>
+    </ul>
+    <p>These photos are from Wikimedia Commons and are used under the licences shown.</p>
+  </details>
+
+  <!-- ============ CONTINUE THE ROUTE ============ -->
+  <nav class="next-stops" aria-label="Other cities">
+    <a href="mitrovica.html" class="prev">
+      <span class="dir">&larr; Previous stop</span>
+      <span class="city"><span class="num">1</span> Mitrovica</span>
+    </a>
+    <a href="peja.html" class="next">
+      <span class="dir">Next stop &rarr;</span>
+      <span class="city"><span class="num">3</span> Peja</span>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

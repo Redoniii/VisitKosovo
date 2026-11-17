@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gjakova | Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mitrovica.html">Mitrovica</a></li>
+        <li><a href="prishtina.html">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html" class="active">Gjakova</a></li>
+        <li><a href="prizren.html">Prizren</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ============ CITY MAP HERO ============ -->
+  <section class="hero" style="--hero-img: url('Photos/gjakova-panorama.jpg')">
+    <div class="hero-head">
+      <div>
+        <h1>Gjakova</h1>
+        <ol class="legend">
+          <li><a href="#bazaar">Grand Bazaar</a></li>
+          <li><a href="#hadum">Hadum Mosque</a></li>
+          <li><a href="#terzi">Terzi Bridge</a></li>
+        </ol>
+      </div>
+      <p class="hero-tag">Stop 4<br>of 5</p>
+    </div>
+
+    <div class="stage">
+      <svg class="route" viewBox="0 0 1000 880" aria-hidden="true">
+        <path class="road" pathLength="1000" d="M500,-20 V250 H620 V560 L420,700 V870" />
+        <path class="dots" d="M480,170 H390" />
+        <path class="dots" d="M640,460 H690 V395 H720" />
+        <path class="dots" d="M400,760 H370 V700 H350" />
+      </svg>
+
+      <div class="stop">
+        <span class="pin" style="--px:500; --py:170">1</span>
+        <a class="card" href="#bazaar" style="--x:170; --y:55; --tilt:-3deg">
+          <img src="Photos/gjakova-bazaar.jpg" alt="A street in the Grand Bazaar of Gjakova">
+          <span class="caption">Grand Bazaar <small>Old Town &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:620; --py:460">2</span>
+        <a class="card" href="#hadum" style="--x:720; --y:280; --tilt:2.5deg">
+          <img src="Photos/gjakova-hadum.jpg" alt="The painted interior of the Hadum Mosque">
+          <span class="caption">Hadum Mosque <small>Old Town &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:420; --py:760">3</span>
+        <a class="card" href="#terzi" style="--x:130; --y:585; --tilt:-2deg">
+          <img src="Photos/gjakova-terzi.jpg" alt="The arches of the Terzi Bridge">
+          <span class="caption">Terzi Bridge <small>Erenik river &middot; Read &darr;</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-hint">Pick a stop &mdash; or <a href="#intro">scroll to explore Gjakova &darr;</a></p>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="intro" id="intro">
+    <p class="eyebrow">City of the old bazaar</p>
+    <h2>Discover Gjakova</h2>
+    <p>Gjakova (Gjakov&euml;) lies in south-western Kosovo, close to the border with Albania. The city grew up in Ottoman times around one of the largest and oldest bazaars in the region, where craftsmen and traders worked side by side for centuries.</p>
+    <p>Much of the old bazaar burned during the war in 1999 and has since been carefully rebuilt. Today its cobbled streets are full of caf&eacute;s, restaurants and small shops, and it is one of the most atmospheric places in Kosovo to spend an evening.</p>
+    <a class="more" href="https://en.wikipedia.org/wiki/Gjakova" target="_blank" rel="noopener">More about Gjakova on Wikipedia &rarr;</a>
+  </section>
+
+  <!-- ============ SIGHTS ============ -->
+  <main class="features">
+
+    <article class="feature" id="bazaar">
+      <img src="Photos/gjakova-bazaar.jpg" alt="A street in the Grand Bazaar of Gjakova">
+      <div>
+        <p class="eyebrow"><span class="num">1</span> Grand Bazaar</p>
+        <h2>Centuries of trade under one roofline.</h2>
+        <p>The Grand Bazaar (&Ccedil;arshia e Madhe) is a long, winding street of low wooden shops dating back to the Ottoman era. Each part of the bazaar was once home to a different craft, from tailors and silversmiths to saddle-makers.</p>
+        <p>Rebuilt after the war, it is once again the lively centre of the city &mdash; the place to walk, eat and shop.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Old_Bazaar,_Gjakova" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="hadum">
+      <img src="Photos/gjakova-hadum.jpg" alt="The painted interior of the Hadum Mosque">
+      <div>
+        <p class="eyebrow"><span class="num">2</span> Hadum Mosque</p>
+        <h2>Painted walls from the 16th century.</h2>
+        <p>The Hadum Mosque, built at the end of the 16th century, stands at the edge of the Grand Bazaar and is one of the oldest mosques in Gjakova. It was the centre around which the bazaar first grew.</p>
+        <p>It is best known for its richly painted interior, with colourful decoration covering the walls and dome.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Hadum_Mosque" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="terzi">
+      <img src="Photos/gjakova-terzi.jpg" alt="The arches of the Terzi Bridge">
+      <div>
+        <p class="eyebrow"><span class="num">3</span> Terzi Bridge</p>
+        <h2>The Tailors' Bridge.</h2>
+        <p>Near the village of Bishtazhin, just outside the city, the Terzi Bridge (Ura e Terzive) crosses the Erenik river with a long row of stone arches. It probably dates from the end of the 15th century and was rebuilt in the 18th; it takes its name from the tailors' guild of Gjakova.</p>
+        <p>It is one of the longest old stone bridges in Kosovo and a peaceful spot for a walk by the river.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Terzi_Bridge" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ============ GOOD TO KNOW ============ -->
+  <section class="facts-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Good to know</h2>
+    </div>
+    <ul class="facts">
+      <li><strong>Getting there</strong><span>About 1&frac12; hours by road from Prishtina; Prizren and Peja are both under an hour away.</span></li>
+      <li><strong>Best time of day</strong><span>Evening, when the bazaar's caf&eacute;s and restaurants fill up.</span></li>
+      <li><strong>Combine with</strong><span>Peja to the north, or Prizren to the south-east.</span></li>
+    </ul>
+  </section>
+
+  <details class="credits">
+    <summary>Photo credits</summary>
+    <ul>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Gjakova_-_%C3%87arshia_e_Madhe_-_Big_Baazar_Panorama.JPG" target="_blank" rel="noopener">Gjakova - &Ccedil;arshia e Madhe - Big Baazar Panorama</a> &mdash; Shk&euml;lzen Rexha (Valed Promotion), <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Street_in_the_Old_Bazaar_of_Gjakova,_2025.jpg" target="_blank" rel="noopener">Street in the Old Bazaar of Gjakova, 2025</a> &mdash; Bdx, <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:The_Hadumi_Mosque_in_Gjakova.jpg" target="_blank" rel="noopener">The Hadumi Mosque in Gjakova</a> &mdash; Bujar Gashii, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+      <li><a href="https://commons.wikimedia.org/wiki/File:Ura_e_Terzive.jpg" target="_blank" rel="noopener">Ura e Terzive</a> &mdash; Gashi Bujar, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a></li>
+    </ul>
+    <p>These photos are from Wikimedia Commons and are used under the licences shown.</p>
+  </details>
+
+  <!-- ============ CONTINUE THE ROUTE ============ -->
+  <nav class="next-stops" aria-label="Other cities">
+    <a href="peja.html" class="prev">
+      <span class="dir">&larr; Previous stop</span>
+      <span class="city"><span class="num">3</span> Peja</span>
+    </a>
+    <a href="prizren.html" class="next">
+      <span class="dir">Next stop &rarr;</span>
+      <span class="city"><span class="num">5</span> Prizren</span>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

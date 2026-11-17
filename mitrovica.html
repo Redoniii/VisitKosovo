@@ -1,102 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitrovica</title>
-    <link rel="stylesheet" href="mitrovica.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="bootstrap.js"></script>
-    <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitrovica | Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
 </head>
-<body id="redoni">
-<div class="rb-navbar">
-    <img src="Photos\r2.png" class="logo">
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="Faqja3.html">Prishtina</a></li>
-        <li><a href="mitrovica.html"><span class="mitrovica">Mitrovica</span></a></li>
-        <li><a href="prizreni.html">Prizreni</a></li>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mitrovica.html" class="active">Mitrovica</a></li>
+        <li><a href="prishtina.html">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html">Gjakova</a></li>
+        <li><a href="prizren.html">Prizren</a></li>
         <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ CITY MAP HERO ============ -->
+  <section class="hero" style="--hero-img: url('Photos/liqeni.jpg')">
+    <div class="hero-head">
+      <div>
+        <h1>Mitrovica</h1>
+        <ol class="legend">
+          <li><a href="#isa-bey">Isa Bey Mosque</a></li>
+          <li><a href="#lake">Mitrovica Lake</a></li>
+          <li><a href="#trepca">Trep&ccedil;a Mine</a></li>
+          <li><a href="#mazhiq">Mazhiq Mosque</a></li>
+          <li><a href="#st-peter">St. Peter's Church</a></li>
+          <li><a href="#boletin">Isa Boletini Towers</a></li>
+        </ol>
+      </div>
+      <p class="hero-tag">Stop 1<br>of 5</p>
+    </div>
+
+    <!-- 1000 x 1480 map: --h on the stage must match the svg viewBox height -->
+    <div class="stage" style="--h:1480">
+      <svg class="route" viewBox="0 0 1000 1480" aria-hidden="true">
+        <path class="road" pathLength="1000"
+              d="M470,-20 V260 H540 V500 L460,580 V740 H550 V980 L470,1060 V1210 H530 V1480" />
+        <path class="dots" d="M450,150 H360" />
+        <path class="dots" d="M560,380 H600 V350 H640" />
+        <path class="dots" d="M440,640 H360" />
+        <path class="dots" d="M570,870 H640" />
+        <path class="dots" d="M450,1100 H400 V1125 H360" />
+        <path class="dots" d="M550,1330 H640" />
+      </svg>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:150">1</span>
+        <a class="card" href="#isa-bey" style="--x:140; --y:35; --tilt:-3deg">
+          <img src="Photos/Xhamia_e_Mitrovices.JPG" alt="Mosque in Mitrovica">
+          <span class="caption">Isa Bey Mosque <small>City &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:540; --py:380">2</span>
+        <a class="card" href="#lake" style="--x:640; --y:235; --tilt:2.5deg">
+          <img src="Photos/liqeni.jpg" alt="Aerial view of Mitrovica Lake">
+          <span class="caption">Mitrovica Lake <small>City &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:460; --py:640">3</span>
+        <a class="card" href="#trepca" style="--x:140; --y:525; --tilt:-2deg">
+          <img src="Photos/miniera-e-Trepces.jpg" alt="Entrance to the Trepça mine">
+          <span class="caption">Trep&ccedil;a Mine <small>Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:550; --py:870">4</span>
+        <a class="card" href="#mazhiq" style="--x:640; --y:755; --tilt:3deg">
+          <img src="Photos/mazhiq.jpg" alt="Ruins of the Mazhiq Mosque">
+          <span class="caption">Mazhiq Mosque <small>13 km out &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:1100">5</span>
+        <a class="card" href="#st-peter" style="--x:140; --y:1010; --tilt:-2.5deg">
+          <img src="Photos/kisha.jpg" alt="Remains of St. Peter's Church">
+          <span class="caption">St. Peter's Church <small>Stari Terg &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:530; --py:1330">6</span>
+        <a class="card" href="#boletin" style="--x:640; --y:1215; --tilt:2deg">
+          <img src="Photos/Boletin.jpg" alt="The Isa Boletini towers">
+          <span class="caption">Boletini Towers <small>Boletin village &middot; Read &darr;</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-hint">Pick a stop &mdash; or <a href="#sights">scroll to explore Mitrovica &darr;</a></p>
+  </section>
+
+  <!-- ============ SIGHTS ============ -->
+  <main class="features" id="sights">
+
+    <article class="feature" id="isa-bey">
+      <img src="Photos/Xhamia_e_Mitrovices.JPG" alt="Mosque in Mitrovica">
+      <div>
+        <p class="eyebrow"><span class="num">1</span> Isa Bey Mosque</p>
+        <h2>One of the city's oldest landmarks.</h2>
+        <p>Isa Bey Mosque is a historical mosque located in Mitrovica, Kosovo. It is one of the oldest and most significant Islamic cultural landmarks in the city.</p>
+        <p>The mosque was built in the 15th century and is considered an important example of Ottoman-era architecture, with its distinctive domed roof and intricate tile work.</p>
+        <a class="more" href="https://www.destimap.com/index.php?act=attraction&amp;a=Xhamia-e-Zallit%2C-Mitrovica%2C-Kosovo" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="lake">
+      <img src="Photos/liqeni.jpg" alt="Aerial view of Mitrovica Lake">
+      <div>
+        <p class="eyebrow"><span class="num">2</span> Artificial Lake of Mitrovica</p>
+        <h2>A calm escape in the city.</h2>
+        <p>The artificial lake of Mitrovica is a man-made body of water in the city, created for recreational and aesthetic purposes. It offers a scenic location for activities such as boating, fishing, and picnicking.</p>
+        <p>It serves as a popular destination for local residents and tourists alike, and creates a tranquil environment for visitors to enjoy.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Mitrovica_Lake" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="trepca">
+      <img src="Photos/miniera-e-Trepces.jpg" alt="Entrance to the Trepça mine">
+      <div>
+        <p class="eyebrow"><span class="num">3</span> Trep&ccedil;a</p>
+        <h2>One of Europe's largest mines.</h2>
+        <p>Mitrovica is home to the Trep&ccedil;a mine, one of the largest lead and zinc mines in Europe, and a significant source of the country's economy.</p>
+        <p>The mine has a rich history dating back to the Roman Empire and has played a significant role in the industrial development of the region.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Trep%C4%8Da_Mines" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="mazhiq">
+      <img src="Photos/mazhiq.jpg" alt="Ruins of the Mazhiq Mosque">
+      <div>
+        <p class="eyebrow"><span class="num">4</span> The Mazhiqi Mosque</p>
+        <h2>A ruin from the Ottoman era.</h2>
+        <p>The Mazhiqi Mosque (also known as the Mosque of Mujezin Hoxha) is a very old mosque which was built around the 14th century, during the rule of the Ottoman Empire. It is located 13 km (8 mi) from Mitrovica, in the village of Mazhiq.</p>
+        <p>The mosque is almost fully destroyed, and has lost its original function.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="st-peter">
+      <img src="Photos/kisha.jpg" alt="Remains of St. Peter's Church">
+      <div>
+        <p class="eyebrow"><span class="num">5</span> St. Peter's Basilica Church</p>
+        <h2>Gothic walls, Byzantine murals.</h2>
+        <p>St. Peter's Basilica Church, also known as Saxon's Church and Latin Church, dates to the 13th century. It was built for the Saxon miners and Catholic merchants and was used until the 16th century. The remains of the church are located in the old city of Stari Terg.</p>
+        <p>St. Peter's Church, a three-nave basilica, is of particular interest because of its gothic architectural style and construction techniques, as well as for the Byzantine mural paintings which decorate the interior.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="boletin">
+      <img src="Photos/Boletin.jpg" alt="The Isa Boletini towers">
+      <div>
+        <p class="eyebrow"><span class="num">6</span> Isa Boletini Towers</p>
+        <h2>Two towers, one family's story.</h2>
+        <p>The two towers are located in Boletin village. The first tower (men's tower) was built in 1887 by the father of Isa Boletini, Adem Boletini. It was destroyed in 1899 by the Ottoman invaders because Isa had built the first Albanian school in the region. Most of the battles happened in this tower.</p>
+        <p>The other tower (women's tower) was built in 1912 and is now called the tower of the fire. It was destroyed during the war. The tower is now used as a museum.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ============ GOOD TO KNOW ============ -->
+  <section class="facts-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Good to know</h2>
+    </div>
+    <ul class="facts">
+      <li><strong>Getting there</strong><span>Under an hour by road north of Prishtina, with regular buses.</span></li>
+      <li><strong>Getting around</strong><span>The city centre and the lake are easy on foot; for Mazhiq, Stari Terg and Boletin village you'll want a car or taxi.</span></li>
+      <li><strong>Best for</strong><span>History lovers &mdash; from medieval mining towns to Ottoman-era monuments.</span></li>
+      <li><strong>When to go</strong><span>Spring to autumn, for walks by the lake and trips into the countryside.</span></li>
     </ul>
-</div>
+  </section>
 
+  <!-- ============ CONTINUE THE ROUTE ============ -->
+  <nav class="next-stops" aria-label="Other cities">
+    <a href="index.html" class="prev">
+      <span class="dir">&larr; Back to the map</span>
+      <span class="city">Home</span>
+    </a>
+    <a href="prishtina.html" class="next">
+      <span class="dir">Next stop &rarr;</span>
+      <span class="city"><span class="num">2</span> Prishtina</span>
+    </a>
+  </nav>
 
-<div class="container-rb">
-
-    <div class="rbcard-item">
-        <div class="image image1"></div>
-        <div class="content">
-        <h1 class="title">Isa Bey Mosque</h1>
-        <p>Isa Bey Mosque is a historical mosque located in Mitrovica, Kosovo. It is one of the oldest and most significant Islamic cultural landmarks in the city. 
-            The mosque was built in the 15th century and is considered an important example of Ottoman-era architecture, with its distinctive domed roof and intricate tile work.</p>
-        <a href="https://www.destimap.com/index.php?act=attraction&a=Xhamia-e-Zallit%2C-Mitrovica%2C-Kosovo" target="_blank" class="button">Read More</a>
-        </div>
-    </div>
-
-    <div class="rbcard-item">
-        <div class="image image2"></div>
-        <div class="content">
-        <h1 class="title">Artificial lake of Mitrovica</h1>
-        <p>The artificial lake of Mitrovica is a man-made body of water in the city, created for recreational and aesthetic purposes. It offers a scenic location for activities such as boating, fishing, and picnicking, and serves as a popular destination for local residents and tourists alike. 
-            The lake creates a tranquil environment for visitors to enjoy.</p>
-        <a href="https://en.wikipedia.org/wiki/Mitrovica_Lake" target="_blank" class="button">Read More</a>
-        </div>
-    </div>
-
-  <div class="rbcard-item">
-      <div class="image image3"></div>
-      <div class="content">
-      <h1 class="title">"Trepca"</h1>
-      <p>Mitrovica is home to the Trepca mine, one of the largest lead and zinc mines in Europe, and a significant source of the country's economy. 
-        The mine has a rich history dating back to the Roman Empire and has played a significant role in the industrial development of the region.</p>
-      <a href="https://en.wikipedia.org/wiki/Trep%C4%8Da_Mines" target="_blank" class="button">Read More</a>
-      <br>
-      <br>
-      </div>
-  </div>
-
-   
-
-  <div class="rbcard-item">
-      <div class="image image4"></div>
-      <div class="content">
-      <h1 class="title">The Mazhiqi Mosque</h1>
-      <p>The Mazhiqi Mosque (also known as the Mosque of Mujezin Hoxha) is a very old mosque which was built around the 14th century. It is located 13 km (8 mi) from Mitrovica, in the village of Mazhiq. The mosque is almost fully destroyed, and has lost its original function.
-
-      It was built during the rule of the Ottoman Empire.</p>
-      <a href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" class="button">Read More</a>
-      </div>
-  </div>
-
-  <div class="rbcard-item">
-      <div class="image image5"></div>
-      <div class="content">
-      <h1 class="title">St. Peter's Basilica Church</h1>
-      <p>St. Peter's Basilica Church, also known as Saxon's Church and Latin Church, dates to the 13th century. 
-        It was built for the Saxon miners and Catholic merchants and was used until the 16th century. The remains of the church are located in the old city of Stari Terg. St. Peter's Church, a three nave basilica, is of particular interest because of its gothic architectural style and construction techniques, as well as for the Byzantine mural paintings, which decorate the interior</p>
-      <a href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" class="button">Read More</a>
-      </div>
-  </div>
-
-<div class="rbcard-item">
-      <div class="image image6"></div>
-      <div class="content">
-      <h1 class="title">Isa Boletini towers</h1>
-      <p>The two towers are located in Boletin village. The first tower (men's tower) was built in 1887 by the father of Isa Boletini, Adem Boletini. It was destroyed in 1899 by the Ottoman invaders because Isa had built the first Albanian school on the region. Most of the battles happened in this tower.
-      The other tower (women's tower) was built in 1912 and is now called the tower of the fire. 
-      It was destroyed during the war. The tower is now used as a museum.</p>
-      <a href="https://en.wikipedia.org/wiki/Monuments_in_Mitrovica" target="_blank" class="button">Read More</a>
-      </div>
-</div>
-</div>
-
-</div>
-
-<!-- <div class="footer">
-    <p id="p">Copyright &copy; 2023 | All Rights Reserved</p>
-</div> -->
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prizren | Visit Kosovo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+  <link rel="icon" type="image/png" href="Photos/favicon-32x32.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="logo"><img src="Photos/logo-light.png" alt="Visit Kosovo &ndash; home"></a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mitrovica.html">Mitrovica</a></li>
+        <li><a href="prishtina.html">Prishtina</a></li>
+        <li><a href="peja.html">Peja</a></li>
+        <li><a href="gjakova.html">Gjakova</a></li>
+        <li><a href="prizren.html" class="active">Prizren</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ CITY MAP HERO ============ -->
+  <section class="hero" style="--hero-img: url('Photos/ura.jpg')">
+    <div class="hero-head">
+      <div>
+        <h1>Prizren</h1>
+        <ol class="legend">
+          <li><a href="#fortress">Prizren Fortress</a></li>
+          <li><a href="#holy-saviour">Holy Saviour Church</a></li>
+          <li><a href="#sinan-pasha">Sinan Pasha Mosque</a></li>
+          <li><a href="#stone-bridge">The Stone Bridge</a></li>
+          <li><a href="#hammam">The Hammam</a></li>
+          <li><a href="#league">League of Prizren</a></li>
+        </ol>
+      </div>
+      <p class="hero-tag">Stop 5<br>of 5</p>
+    </div>
+
+    <!-- 1000 x 1480 map: --h on the stage must match the svg viewBox height -->
+    <div class="stage" style="--h:1480">
+      <svg class="route" viewBox="0 0 1000 1480" aria-hidden="true">
+        <path class="road" pathLength="1000"
+              d="M530,-20 V260 H460 V500 L540,580 V740 H450 V980 L530,1060 V1210 H470 V1480" />
+        <path class="dots" d="M550,150 H640" />
+        <path class="dots" d="M440,380 H400 V350 H360" />
+        <path class="dots" d="M560,640 H640" />
+        <path class="dots" d="M430,870 H360" />
+        <path class="dots" d="M550,1100 H600 V1125 H640" />
+        <path class="dots" d="M450,1330 H360" />
+      </svg>
+
+      <div class="stop">
+        <span class="pin" style="--px:530; --py:150">1</span>
+        <a class="card" href="#fortress" style="--x:640; --y:35; --tilt:3deg">
+          <img src="Photos/kaleja.jpg" alt="Prizren Fortress on its hill">
+          <span class="caption">The Fortress <small>Hilltop &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:460; --py:380">2</span>
+        <a class="card" href="#holy-saviour" style="--x:140; --y:235; --tilt:-2.5deg">
+          <img src="Photos/churchh.jpg" alt="The Holy Saviour Church">
+          <span class="caption">Holy Saviour Church <small>Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:540; --py:640">3</span>
+        <a class="card" href="#sinan-pasha" style="--x:640; --y:525; --tilt:2deg">
+          <img src="Photos/sinan.jpg" alt="Sinan Pasha Mosque">
+          <span class="caption">Sinan Pasha Mosque <small>Old Town &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:450; --py:870">4</span>
+        <a class="card" href="#stone-bridge" style="--x:140; --y:755; --tilt:-3deg">
+          <img src="Photos/ura.jpg" alt="The Stone Bridge over the Bistrica river">
+          <span class="caption">The Stone Bridge <small>Bistrica river &middot; Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:530; --py:1100">5</span>
+        <a class="card" href="#hammam" style="--x:640; --y:1010; --tilt:2.5deg">
+          <img src="Photos/hamami1.jpg" alt="The Prizren Hammam">
+          <span class="caption">The Hammam <small>Read &darr;</small></span>
+        </a>
+      </div>
+
+      <div class="stop">
+        <span class="pin" style="--px:470; --py:1330">6</span>
+        <a class="card" href="#league" style="--x:140; --y:1215; --tilt:-2deg">
+          <img src="Photos/lidhja.jpg" alt="The League of Prizren complex">
+          <span class="caption">League of Prizren <small>1878 &middot; Read &darr;</small></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="scroll-hint">Pick a stop &mdash; or <a href="#sights">scroll to explore Prizren &darr;</a></p>
+  </section>
+
+  <!-- ============ SIGHTS ============ -->
+  <main class="features" id="sights">
+
+    <article class="feature" id="fortress">
+      <img src="Photos/kaleja.jpg" alt="Prizren Fortress on its hill">
+      <div>
+        <p class="eyebrow"><span class="num">1</span> The Prizren Fortress</p>
+        <h2>The city's watchtower.</h2>
+        <p>The Prizren Fortress, also known as Kalaja, is a medieval fortress located in the city of Prizren, Kosovo. It is situated on a hill overlooking the city and was built in the 11th century during the Byzantine era. The fortress was later expanded and reinforced by the Ottoman Turks in the 16th and 17th centuries.</p>
+        <p>It has served as a military stronghold, as well as a symbol of power and prestige for various empires throughout history.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="holy-saviour">
+      <img src="Photos/churchh.jpg" alt="The Holy Saviour Church">
+      <div>
+        <p class="eyebrow"><span class="num">2</span> The Holy Saviour Church</p>
+        <h2>Medieval and still standing.</h2>
+        <p>The Holy Saviour Church, also known as Kisha e Shën Shpirtit, is a historic church located in Prizren, Kosovo. It was built in the 14th century during the medieval period and is considered one of the oldest and most important Christian monuments in the city.</p>
+        <p>The church is a cultural and architectural landmark and attracts tourists and religious visitors to Prizren. It is an important part of the city's rich cultural and religious heritage.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Church_of_the_Holy_Saviour,_Prizren" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="sinan-pasha">
+      <img src="Photos/sinan.jpg" alt="Sinan Pasha Mosque">
+      <div>
+        <p class="eyebrow"><span class="num">3</span> Sinan Pasha Mosque</p>
+        <h2>The skyline of the old town.</h2>
+        <p>Xhamia e Sinan Pasha is a historic mosque located in the city of Prizren, Kosovo. It was built in the 16th century during Ottoman rule and is considered one of the oldest and most important Islamic architectural monuments in the city.</p>
+        <p>The mosque is named after its patron, Sinan Pasha, who was a high-ranking Ottoman official. It is a cultural and architectural landmark and attracts tourists and religious visitors to Prizren.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Sinan_Pasha_Mosque_(Prizren)" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="stone-bridge">
+      <img src="Photos/ura.jpg" alt="The Stone Bridge over the Bistrica river">
+      <div>
+        <p class="eyebrow"><span class="num">4</span> The Stone Bridge</p>
+        <h2>Centuries over the Bistrica.</h2>
+        <p>The Stone Bridge, also known as Ura e Gurit, is a historic bridge located in Prizren, Kosovo. It is one of the oldest and most important architectural landmarks in the city and has been in use for centuries. The bridge is built over the Bistrica river and connects different parts of the city.</p>
+        <p>It is a cultural and historical landmark that attracts tourists and visitors to Prizren, and is considered a symbol of the city's rich history and cultural heritage.</p>
+        <a class="more" href="https://en.wikipedia.org/wiki/Old_Stone_Bridge,_Prizren" target="_blank" rel="noopener">Read more &rarr;</a>
+      </div>
+    </article>
+
+    <article class="feature" id="hammam">
+      <img src="Photos/hamami1.jpg" alt="The Prizren Hammam">
+      <div>
+        <p class="eyebrow"><span class="num">5</span> The Prizren Hammam</p>
+        <h2>A traditional Ottoman bathhouse.</h2>
+        <p>The Prizren Hammam is a traditional bathhouse in the city of Prizren, Kosovo. It is a cultural and historical landmark and attracts tourists for its traditional Ottoman-style architecture and atmosphere.</p>
+        <p>The bathhouse is a popular destination for locals and visitors seeking to relax and experience the traditional culture of the region.</p>
+      </div>
+    </article>
+
+    <article class="feature reverse" id="league">
+      <img src="Photos/lidhja.jpg" alt="The League of Prizren complex">
+      <div>
+        <p class="eyebrow"><span class="num">6</span> The League of Prizren</p>
+        <h2>Where the Albanian national awakening began.</h2>
+        <p>The League of Prizren was a political organization established in 1878 in the city of Prizren, Kosovo. The league aimed to unite Albanians and protect their rights and interests within the Ottoman Empire.</p>
+        <p>It is considered to be the first national political organization of Albanians and played a significant role in the Albanian national awakening movement. The League and its congresses are seen as important milestones in the history of Albanian nationalism.</p>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ============ GOOD TO KNOW ============ -->
+  <section class="facts-wrap">
+    <div class="section-head">
+      <p class="eyebrow">Plan your visit</p>
+      <h2>Good to know</h2>
+    </div>
+    <ul class="facts">
+      <li><strong>Getting there</strong><span>About an hour and a half by road from Prishtina, with regular buses.</span></li>
+      <li><strong>Getting around</strong><span>The old town is compact and best explored on foot; the fortress is an uphill walk with great views at the top.</span></li>
+      <li><strong>When to go</strong><span>Summer, when DokuFest &mdash; the international documentary and short film festival &mdash; fills the old town.</span></li>
+      <li><strong>Don't miss</strong><span>Sunset over the red rooftops from the fortress walls, then dinner by the Bistrica river.</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ CONTINUE THE ROUTE ============ -->
+  <nav class="next-stops" aria-label="Other cities">
+    <a href="gjakova.html" class="prev">
+      <span class="dir">&larr; Previous stop</span>
+      <span class="city"><span class="num">4</span> Gjakova</span>
+    </a>
+    <a href="index.html" class="next">
+      <span class="dir">End of the route &rarr;</span>
+      <span class="city">Back to the map</span>
+    </a>
+  </nav>
+
+  <footer class="footer">
+    <a href="index.html" class="brand">Visit <span>Kosovo</span></a>
+    <p>Copyright &copy; 2026 &middot; All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
